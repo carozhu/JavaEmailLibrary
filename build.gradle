@@ -24,7 +24,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
 
     buildTypes {
@@ -32,6 +32,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
 }
@@ -45,11 +49,11 @@ dependencies {
 }
 
 publish {
-    userOrg = 'carozhu' //注册Bintray的用户名
-    groupId = 'com.carozhu'//组ID
-    artifactId = 'javaEmail'//组件标示
-    publishVersion = '1.0.0'//版本
-    desc = 'java email tools'
-    //website = ''//如果有上传GitHub可以填写URL
+    userOrg = 'carozhu'
+    groupId = 'com.carozhu'
+    artifactId = 'javaEmail'
+    publishVersion = '1.0.1'
+    desc = 'use java email library for send email'
+    website = 'https://github.com/carozhu/JavaEmailLibrary.git'
 
 }
